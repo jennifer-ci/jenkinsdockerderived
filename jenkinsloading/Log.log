@@ -1,0 +1,60 @@
+Jan 22, 2022 8:39:00 AM org.kohsuke.stapler.Dispatcher trace
+FINE: -> evaluate(<com.cloudbees.workflow.rest.endpoints.JobAPI@383f6b72> :com.cloudbees.workflow.rest.endpoints.JobAPI,"/runs")
+
+Jan 22, 2022 8:39:00 AM org.eclipse.jetty.server.Request leaveSession
+FINE: Request Request[GET //localhost:8080/job/JenkinsDockerJob/wfapi/runs?since=%238&fullStages=true&_=1642840723396]@55dd1d8e leaving session Session@2f1ad99f{id=node01iqtfhmc92lo41dwbbi2owkhj41,x=node01iqtfhmc92lo41dwbbi2owkhj41.node0,req=1,res=true}
+Jan 22, 2022 8:39:00 AM org.eclipse.jetty.server.session.SessionHandler complete
+
+Jan 22, 2022 8:39:00 AM org.eclipse.jetty.server.HttpConnection parseRequestBuffer
+
+REQUEST POST /job/JenkinsDockerJob/buildHistory/ajax on HttpChannelOverHttp@13e29429{s=HttpChannelState@14c748ce{s=HANDLING rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=5,c=false/false,a=HANDLING,uri=//localhost:8080/job/JenkinsDockerJob/buildHistory/ajax,age=34}
+
+FINE: -> evaluate(((StaplerProxy)<org.jenkinsci.plugins.workflow.job.WorkflowJob@2ab5b0a8[JenkinsDockerJob]>).getTarget(),"/build")
+Jan 22, 2022 8:39:07 AM org.kohsuke.stapler.Dispatcher trace
+FINE: -> <org.jenkinsci.plugins.workflow.job.WorkflowJob@2ab5b0a8[JenkinsDockerJob]>.doBuild(...)
+Jan 22, 2022 8:39:07 AM hudson.model.Queue scheduleInternal
+FINE: org.jenkinsci.plugins.workflow.job.WorkflowJob@2ab5b0a8[JenkinsDockerJob] added to queue
+
+FINE: Executor #-1 for Built-In Node is going to execute JenkinsDockerJob #9
+
+FINE: Executor #-1 for Built-In Node : executing JenkinsDockerJob #9 is now executing JenkinsDockerJob #9 as UsernamePasswordAuthenticationToken [Principal=SYSTEM, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]
+
+FINE: Starting to save /var/jenkins_home/jobs/JenkinsDockerJob/builds/9/atomic7690401133618921196.tmp
+Jan 22, 2022 8:39:08 AM org.jenkinsci.plugins.workflow.cps.CpsThread getContextVariable
+
+
+FINE: Cache repo URL: https://github.com/jenniferhuang/git-developer.git
+Jan 22, 2022 8:39:10 AM jenkins.plugins.git.GitToolChooser remoteAlternatives
+FINE: Cache repo alternative URLs: [git://github.com/jenniferhuang/git-developer.git, git://github.com/jenniferhuang/git-developer, git@github.com:jenniferhuang/git-developer.git, git@github.com:jenniferhuang/git-developer, https://github.com/jenniferhuang/git-developer.git, https://github.com/jenniferhuang/git-developer, ssh://git@github.com/jenniferhuang/git-developer.git, ssh://git@github.com/jenniferhuang/git-developer]
+Jan 22, 2022 8:39:10 AM jenkins.plugins.git.GitToolChooser decideAndUseCache
+FINE: Remote URL git@github.com:jenniferhuang/git-developer.git cache not found
+Jan 22, 2022 8:39:10 AM com.cloudbees.plugins.credentials.CredentialsNameProvider name
+FINE: named `Jennifer-GitHub-Jenkins-Access (Jennifer-GitHub-Jenkins-Access,  username with private key)` from com.cloudbees.plugins.credentials.common.StandardCredentials$NameProvider@73cbc8d0
+
+an 22, 2022 8:39:11 AM org.kohsuke.stapler.Stapler service
+FINE: Processing request for /job/JenkinsDockerJob/9/execution/node/6/wfapi/describe
+Jan 22, 2022 8:39:11 AM org.kohsuke.stapler.Dispatcher trace
+FINE: -> evaluate(<hudson.model.Hudson@5e90d558> :hudson.model.Hudson,"/job/JenkinsDockerJob/9/execution/node/6/wfapi/describe")
+Jan 22, 2022 8:39:11 AM org.kohsuke.stapler.Dispatcher trace
+FINE: -> evaluate(((StaplerProxy)<hudson.model.Hudson@5e90d558>).getTarget(),"/job/JenkinsDockerJob/9/execution/node/6/wfapi/describe")
+
+
+FINE: saving ExecutorStepExecution.PlaceholderTask{runId=JenkinsDockerJob#9,label=,context=CpsStepContext[3:node]:Owner[JenkinsDockerJob/9:JenkinsDockerJob #9],cookie=fa435fd0-c25e-486c-a1a9-c7dec9414fc2,auth=null}
+Jan 22, 2022 8:39:16 AM org.jenkinsci.plugins.workflow.support.pickles.serialization.RiverWriter writeObject
+FINE: Wrote main body to /var/jenkins_home/jobs/JenkinsDockerJob/builds/9/atomic13194684865503061831.tmp
+
+
+
+
+
+FINE: program state saved
+Jan 22, 2022 8:39:18 AM org.jenkinsci.plugins.workflow.cps.CpsFlowExecution cleanUpHeap
+FINE: cleanUpHeap on Owner[JenkinsDockerJob/9:JenkinsDockerJob #9]
+Jan 22, 2022 8:39:18 AM org.jenkinsci.plugins.workflow.cps.CpsFlowExecution cleanUpGlobalClassValue
+FINE: cleaning up [class org.jenkinsci.plugins.pipeline.modeldefinition.agent.impl.AnyScript, class org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter$WhenEvaluator, class org.jenkinsci.plugins.pipeline.modeldefinition.agent.CheckoutScript, class org.jenkinsci.plugins.pipeline.modeldefinition.agent.impl.LabelScript, class org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter] associated with org.jenkinsci.plugins.workflow.cps.CpsGroovyShell$CleanGroovyClassLoader@62723e1a
+Jan 22, 2022 8:39:18 AM org.jenkinsci.plugins.workflow.cps.CpsFlowExecution cleanUpGlobalClassValue
+FINE: cleaning up [class WorkflowScript] associated with org.jenkinsci.plugins.workflow.cps.CpsGroovyShell$CleanGroovyClassLoader@34d9116
+Jan 22, 2022 8:39:18 AM org.jenkinsci.plugins.workflow.job.WorkflowRun setResult
+FINE: JenkinsDockerJob #9 in /var/jenkins_home/jobs/JenkinsDockerJob/builds/9: result is set to SUCCESS
+Jan 22, 2022 8:39:18 AM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: JenkinsDockerJob #9 completed: SUCCESS
